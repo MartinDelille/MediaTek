@@ -8,4 +8,8 @@ BDTek is a personnal comics database for personnal use base on [Meteor](http://w
 
 Currently the project is empty but let's start to define [here](https://github.com/MartinDelille/BDTek/issues).
 
+## Want to help?
+
+Pull request and issue reporting are welcomed!
+
 If you're interested in the project but don't know how to code, [tip me](https://gratipay.com/MartinDelille) or join the project IRC channel (phonations.com / #bdtek)!
