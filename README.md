@@ -1,3 +1,3 @@
 # BDTek
 
-A comics database for personnal use base on http://www.meteor.com technology.
+A comics database for personnal use base on [Meteor](http://www.meteor.com).
