@@ -3,12 +3,18 @@
 </head>
 
 <body>
-  <h1>Welcome to MediaTek!</h1>
-
-  {{> hello}}
+  <div class="container">
+    <header>
+      <h1>Media list</h1>
+    </header>
+    <ul>
+      {{#each medias}}
+        {{> media}}
+      {{/each}}
+    </ul>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="media">
+  <li>{{text}}</li>
 </template>
