@@ -3,7 +3,7 @@ Medias = new Mongo.Collection("medias");
 if (Meteor.isClient) {
   Template.body.helpers({
     medias: function () {
-      return Medias.find({});
+      return Medias.find({}, {sort: {createdAt: -1}});
     }
   });
 
@@ -22,6 +22,16 @@ if (Meteor.isClient) {
 
       // Prevent default form submit
       return false;
+    }
+  });
+
+  Template.media.events({
+    "click .toggle-checked": function () {
+      // Set the checked property to the opposite of its current value
+      Medias.update(this._id, {$set: {checked: ! this.checked}});
+    },
+    "click .delete": function () {
+      Medias.remove(this._id);
     }
   });
 }
